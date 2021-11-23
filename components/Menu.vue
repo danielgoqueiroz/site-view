@@ -1,11 +1,10 @@
 <template>
-  <div>
+  <b-cintainer fluid>
     <b-navbar>
       <b-icon-house-door-fill class="h3" style="margin-right: 16px" />
       <!-- <b-navbar-brand href="#">
         <Logo class="logo" />
       </b-navbar-brand> -->
-      <b-icon-facebook style="margin-right: 8px" />
       <b-icon-instagram style="margin-right: 8px" />
       <b-icon-linkedin style="margin-right: 8px" />
       <b-icon-github style="margin-right: 8px" />
@@ -23,7 +22,7 @@
         </b-nav-form>
       </b-navbar-nav>
     </b-navbar>
-  </div>
+  </b-cintainer>
 </template>
 
 <script>
@@ -37,12 +36,12 @@ export default {
     return {
       logo: {
         title: 'Home',
-        link: '/home',
+        link: '/',
       },
       menu: [
         {
           title: 'Home',
-          link: '/home',
+          link: '/',
         },
         {
           title: 'Sobre',
@@ -59,25 +58,26 @@ export default {
 </script>
 
 <style>
-nav .logo {
+/* nav .logo {
   float: left;
   margin-left: 15px;
   margin-right: 15px;
   text-align: center;
   border-bottom: 3px solid transparent;
   transition: 0.3s;
-}
-nav {
-  display: flex;
+} */
+/* nav {
+  z-index: 1000;
+  display: block;
   width: 100%;
   color: aliceblue;
   align-items: center;
   justify-content: center;
-  background-color: rgb(49, 49, 49);
-}
+  background-color: rgb(41, 41, 41);
+ } */
 
 nav .menu-item {
-  color: aliceblue;
+  color: rgb(131, 131, 131);
   padding: 10px 30px;
   position: relative;
   text-align: center;
@@ -86,9 +86,12 @@ nav .menu-item {
   transition: 0.3s;
 }
 
-nav .menu-item.active,
 nav .menu-item:hover {
-  background-color: rgb(44, 44, 44);
-  border-bottom-color: #57bd84;
+  color: rgb(238, 238, 238);
+  border-bottom: 3px solid rgb(185, 203, 218);
+}
+nav .menu-item:hover {
+  background-color: rgb(102, 102, 102);
+  border-bottom-color: #eeeeee;
 }
 </style>
