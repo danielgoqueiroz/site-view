@@ -1,18 +1,27 @@
 <template>
   <b-container>
-    <b-img src="~/static/images/daniel_queiroz_logo.png"></b-img>
+    <b-img
+      class="NuxtLogo"
+      src="~/static/images/daniel_queiroz_logo.png"
+    ></b-img>
   </b-container>
 </template>
 
 <style>
 .NuxtLogo {
-  animation: 1s appear;
+  animation: 2s appear;
   margin: auto;
 }
 
 @keyframes appear {
-  0% {
+  0%,
+  100% {
+    transform: scale(0);
     opacity: 0;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 </style>

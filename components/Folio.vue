@@ -1,20 +1,17 @@
 <template>
   <b-container fluid>
-    <b-card
-      :title="works.title"
-      img-src="https://picsum.photos/600/300/?image=25"
-      :img-alt="works.imgAlt"
-      img-top
-      :tag="works.tag"
-      style="max-width: 20rem"
-      class="mb-2"
-    />
+    Fólio page
+    <!-- <DynamicImageLoader path="images/01.jpg" /> -->
   </b-container>
 </template>
 
 <script>
+// import DynamicImageLoader from './DynamicImageLoader'
 export default {
   name: 'Folio',
+  components: {
+    // DynamicImageLoader,
+  },
   data() {
     return {
       works: [

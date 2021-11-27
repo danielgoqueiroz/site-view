@@ -1,19 +1,17 @@
 <template>
   <div>
-    <Menu />
-    <router-view />
-    <b-icon-alarm />
     <Sobre />
-    <Contato />
+    <Footer />
   </div>
 </template>
 <script>
-import Menu from '~/components/Menu'
-import Contato from '~/pages/Contato/index.vue'
+import Sobre from '../pages/Sobre'
+import Footer from '../components/Footer'
+
 export default {
   components: {
-    Menu,
-    Contato,
+    Sobre,
+    Footer,
   },
 }
 </script>
@@ -22,5 +20,12 @@ export default {
 *::before,
 *::after {
   margin: 0;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 245, 223),
+    rgba(232, 238, 240, 0.719)
+  );
 }
 </style>

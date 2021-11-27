@@ -1,5 +1,15 @@
 # site-view
 
+## Exemplos de design
+
+Paralax
+https://kuon.space/
+
+Dual-View:
+https://designthat.works/
+
+http://preview.themeforest.net/item/rainfo-vue-js-minimal-agency-and-portfolio-template/full_screen_preview/31671489?_ga=2.240574019.1314743828.1620695694-933693064.1600738304&irgwc=1&clickid=T-u2TzWLmxyLR54wUx0Mo3IkUkG2jDTXZQL6240&iradid=275988&irpid=2305834&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_2305834&utm_medium=affiliate&utm_source=impact_radius
+
 ## Build Setup
 
 ```bash

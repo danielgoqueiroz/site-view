@@ -1,36 +1,37 @@
 <template>
-  <b-cintainer fluid>
-    <b-navbar>
-      <b-icon-house-door-fill class="h3" style="margin-right: 16px" />
-      <!-- <b-navbar-brand href="#">
-        <Logo class="logo" />
-      </b-navbar-brand> -->
-      <b-icon-instagram style="margin-right: 8px" />
-      <b-icon-linkedin style="margin-right: 8px" />
-      <b-icon-github style="margin-right: 8px" />
-      <b-icon-telephone-fill style="margin-right: 8px" />
-      (48) 9 9937-0534 @ contato@danielgoqueiroz.com
-      <b-navbar-nav class="ml-auto">
-        <b-nav-form>
-          <NuxtLink
-            v-for="item in menu"
-            :key="item.title"
-            class="menu-item"
-            :to="item.link"
-            >{{ item.title }}
-          </NuxtLink>
-        </b-nav-form>
-      </b-navbar-nav>
+  <div>
+    <b-navbar type="dark" variant="dark">
+      <b-navbar-brand href=""><Logo /> </b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse is-nav> </b-collapse>
+
+      <p class="text">
+        Site em constante construção. feito com
+        <b-link href="https://nuxtjs.org/" target="_blank"> Nuxt</b-link>. e
+        pode ser acompanhado por aqui:
+        <b-link
+          title="Link para projeto no NuxtJS"
+          href="https://github.com/danielgoqueiroz/site-view"
+          target="_blank"
+        >
+          <b-icon-github
+            title="Link para projeto no github"
+            class="icon"
+            variant="info"
+            font-scale="1.5"
+          />
+        </b-link>
+      </p>
     </b-navbar>
-  </b-cintainer>
+  </div>
 </template>
 
 <script>
-// import Logo from '~/components/Logo'
+import Logo from '~/components/Logo'
 export default {
   name: 'Menu',
   components: {
-    // Logo,
+    Logo,
   },
   data() {
     return {
@@ -58,15 +59,21 @@ export default {
 </script>
 
 <style>
-/* nav .logo {
+.text {
+  color: rgb(131, 131, 131);
+}
+.icon {
+  margin-left: 10px;
+}
+nav .logo {
   float: left;
   margin-left: 15px;
   margin-right: 15px;
   text-align: center;
   border-bottom: 3px solid transparent;
   transition: 0.3s;
-} */
-/* nav {
+}
+nav {
   z-index: 1000;
   display: block;
   width: 100%;
@@ -74,7 +81,7 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: rgb(41, 41, 41);
- } */
+}
 
 nav .menu-item {
   color: rgb(131, 131, 131);
