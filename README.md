@@ -1,5 +1,7 @@
 # site-view
 
+Projeto de site pessoal. Tem como objetivo ser um ponto de partida para a melhoria nas habilidades em framework vueJS e Nuxt.js, atendendo a uma demanda pessoal para trocar o site pessoal, anteriormente feito em wordpress, para um site feito de forma a dar maior liberdade durante desenvolvimento.
+
 ## Exemplos de design
 
 Paralax
