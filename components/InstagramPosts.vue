@@ -19,7 +19,6 @@ export default {
         { img: require('~/static/images/image.jpg') },
         { img: require('~/static/images/image.jpg') },
         { img: require('~/static/images/image.jpg') },
-        { img: require('~/static/images/image.jpg') },
       ],
     }
   },

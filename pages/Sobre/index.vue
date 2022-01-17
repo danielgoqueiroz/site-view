@@ -48,22 +48,21 @@ export default {
       infoChosed: 1,
       infos: [
         {
-          type: 'Desenvolvedor',
-          content: `Atuo desde 2018 desenvolvedor Java na Dígitro Tecnologia, tendo como linguagem o Java no backend, 
-                Vue no frontEnd e tendo utilizado bancos os principais bancos relacionais, como Postgres, Oracle e MySql, e alguns sem esquema, como mongo e elasticsearch.
-                Atualmente faço pós-graduação em ciência de dados na PUC-RS (online).
-                Anteriormente, possuo formação em publicidade e propaganda, tendo atuado na produção audiovisual por mais de 10 anos.`,
+          type: 'Fotógrafo',
+          content: `Como primeira formação publicidade e propaganda (2005), 
+                e competência na produção visual em fotografia e vídeos, atuei por oito anos em jornal
+                diário, online e impresso, em Florianópolis SC, além de alguns anos com fotografia social. 
+                Ao todo foram 14 anos dedicados profissionalmente a produção audiovisual, 
+                tendo participado de alguns prêmios nacionais e regionais de jornalismo.
+                Atualmente atuo como desenvolvedor na Dígitro tecnologia.`,
         },
         {
-          type: 'Fotógrafo',
-          content: `Morador natural da ilha de Santa Catarina, possuo formação em
-                publicidade e propaganda (2005), e competência na produção visual em
-                fotografia e vídeos, tendo atuado por oito anos em jornal
-                diário, online e impresso, em Florianópolis SC. Ao todo foram 14 anos dedicados
-                profissionalmente a produção audiovisual. Em 2018, com a dispença do jornal, decidi
-                cultivar uma vontade antiga, me desenvolver como programador, 
-                caminho que desempenho até os dias atuais. Atualmente atuo como desenvolvedor
-                Java na Dígitro tecnologia. `,
+          type: 'Desenvolvedor',
+          content: `Após uma mudança de carreira em 2018, tenho atuado como desenvolvedor backend na Dígitro Tecnologia. 
+                Tenho atuado como  backend usando a linguegm Java. Além disso, já utilizei tenho usado VueJS no frontEnd em alguns projetos e
+                já trabalei com banco de dados dados relacionais, como Postgres, Oracle e MySql, e alguns NoSQL como MongoDB e Elasticsearch. 
+                Atualmente faço pós-graduação em ciência de dados na PUC-RS (online).
+                Anteriormente, possuo formação em publicidade e propaganda, tendo atuado na produção audiovisual por mais de 10 anos.`,
         },
       ],
       imageScale: '100%',

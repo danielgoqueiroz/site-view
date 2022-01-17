@@ -4,9 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'site-view',
+    title: 'Daniel G. Queiroz',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'pt-BR',
     },
     meta: [
       { charset: 'utf-8' },
