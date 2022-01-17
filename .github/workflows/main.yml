@@ -33,7 +33,7 @@ jobs:
           name: dist
           path: dist
       - name: Synct files to hosting
-        uses: Samkirklan/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           server: ftp.danielqueiroz.com
           username: github@danielqueiroz.com
