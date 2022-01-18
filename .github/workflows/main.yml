@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Install dependencies
-        run: npm ci
+        run: npm i
       - name: Build dependencies
         run: npm run build
       - name: Archive production artifact
@@ -19,6 +19,7 @@ jobs:
         with:
           name: dist
           path: dist
+          if-no-files-found: error 
   deploy:
     name: Deploy
     needs: build
@@ -30,7 +31,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: dist
-          path: ./dist
+          path: dist
       - name: Synct files to hosting
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
