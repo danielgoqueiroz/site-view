@@ -1,6 +1,25 @@
 # site-view
 
-Projeto de site pessoal. Tem como objetivo ser um ponto de partida para a melhoria nas habilidades em framework vueJS e Nuxt.js, atendendo a uma demanda pessoal para trocar o site pessoal, anteriormente feito em wordpress, para um site feito de forma a dar maior liberdade durante desenvolvimento.
+## Sobre
+
+Após anos utilizando wordpress como ferramenta para contruir meu site, decidi fazer um site onde aplico os estudos com VueJS e Nuxt.js.
+
+## TODO
+
+### View
+
+- [ ] Página inicial com apresentação simples
+- [ ] Página de contato
+- [ ] Página de login (salva token em memória)
+- [ ] Página de posts (lista de posts)
+- [ ] Página de post (detalhes do post)
+- [x] Deploy no github quando realizar push (com action FTP)
+
+### Servidor
+
+- [ ] api para envio de email
+- [ ] formulário de contato
+- [ ] formulário de login
 
 ## Exemplos de design
 
@@ -10,23 +29,14 @@ https://kuon.space/
 Dual-View:
 https://designthat.works/
 
-http://preview.themeforest.net/item/rainfo-vue-js-minimal-agency-and-portfolio-template/full_screen_preview/31671489?_ga=2.240574019.1314743828.1620695694-933693064.1600738304&irgwc=1&clickid=T-u2TzWLmxyLR54wUx0Mo3IkUkG2jDTXZQL6240&iradid=275988&irpid=2305834&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_2305834&utm_medium=affiliate&utm_source=impact_radius
+Envatheme:
+shorturl.at/uzDM7
 
 ## Build Setup
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# Rodar em modo desenvolvimento
+$ npm serve
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
