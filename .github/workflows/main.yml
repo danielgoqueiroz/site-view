@@ -28,9 +28,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@main
         with:
           name: dist
           path: dist
