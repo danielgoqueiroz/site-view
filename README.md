@@ -29,9 +29,6 @@ https://kuon.space/
 Dual-View:
 https://designthat.works/
 
-Envatheme:
-shorturl.at/uzDM7
-
 ## Build Setup
 
 ```bash
