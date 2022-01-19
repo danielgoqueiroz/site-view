@@ -8,12 +8,12 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 
 ### View
 
-- [ ] Página inicial com apresentação simples
+- [x] Página inicial com apresentação (simples)
+- [x] Deploy no github quando realizar push (com action FTP)
 - [ ] Página de contato
 - [ ] Página de login (salva token em memória)
 - [ ] Página de posts (lista de posts)
 - [ ] Página de post (detalhes do post)
-- [x] Deploy no github quando realizar push (com action FTP)
 
 ### Servidor
 
