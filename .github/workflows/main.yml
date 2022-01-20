@@ -35,8 +35,7 @@ jobs:
           name: dist
           path: ./
       - name: Synct files to hosting
-        # uses: SamKirkland/FTP-Deploy-Action@4.2.0
-        uses: Penguibird/FTP-Deploy-Action@4.2.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.danielqueiroz.com
           username: ${{ secrets.FTP_USER }}
