@@ -1,11 +1,10 @@
 <template>
   <b-container>
-    <!-- <PhotoSlide /> -->
-    <!--
+    <PhotoSlide />
     <SobreCard />
     <InstagramPosts />
     <Folio />
-     <ContatoForm /> -->
+    <ContatoForm />
   </b-container>
 </template>
 

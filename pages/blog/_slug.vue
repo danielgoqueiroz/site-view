@@ -1,21 +1,26 @@
 <template>
-  <b-container fluid>
-    {{ docs }}
-    <nuxt-content :document="docs"></nuxt-content>
+  <b-container fluid class="content">
+    <h1>{{ doc.title }}</h1>
+    <nuxt-content :document="doc"></nuxt-content>
   </b-container>
 </template>
 
 <script>
 export default {
-  data() {
+  async asyncData({ $content }) {
+    const doc = await $content('portfolio/developer/covidômetro').fetch()
+
     return {
-      docs: [],
+      doc,
     }
-  },
-  async fetch() {
-    this.docs = await this.$content('blog').fetch()
   },
 }
 </script>
 
-<style></style>
+<style>
+.content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #badde2;
+}
+</style>

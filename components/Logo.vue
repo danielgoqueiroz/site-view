@@ -14,14 +14,8 @@
 }
 
 @keyframes appear {
-  0%,
-  100% {
-    transform: scale(0);
+  0% {
     opacity: 0;
-  }
-  80% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
 </style>

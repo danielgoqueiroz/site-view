@@ -1,17 +1,27 @@
 <template>
   <div>
-    <Sobre />
-    <Footer />
+    <Menu />
+    <Divisor />
+    <About />
+    <Divisor />
+<!--    <Projects />-->
+    <Contact />
   </div>
 </template>
 <script>
-import Sobre from '../pages/Sobre'
-import Footer from '../components/Footer'
+import About from '~/pages/About'
+import Menu from '~/components/Menu.vue'
+import Contact from '~/pages/Contact'
+import WelcomeSlider from '~/components/WelcomeSlider.vue'
+import Divisor from '~/components/Divisor.vue'
 
 export default {
   components: {
-    Sobre,
-    Footer,
+    WelcomeSlider,
+    Menu,
+    About,
+    Contact,
+    Divisor,
   },
 }
 </script>
@@ -20,6 +30,12 @@ export default {
 *::before,
 *::after {
   margin: 0;
+}
+.menu {
+  z-index: 1000;
+  width: 100%;
+
+  opacity: 1;
 }
 body {
   background-image: linear-gradient(

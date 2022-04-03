@@ -9,6 +9,8 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 ### View
 
 - [x] Página inicial com apresentação (simples)
+- [x] Botão de rolagem vertical
+- [ ] Animaçao de transição no botão de rolagem vertical
 - [x] Deploy no github quando realizar push (com action FTP)
 - [ ] Página de contato
 - [ ] Página de login (salva token em memória)

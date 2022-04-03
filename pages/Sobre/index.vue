@@ -1,6 +1,5 @@
 <template>
   <b-container fluid class="content">
-    <SocialIcons />
     <b-row>
       <b-col cols="1" />
       <b-col cols="4">
@@ -14,19 +13,17 @@
       </b-col>
 
       <b-col cols="5">
-        <transition name="fadeAnimation">
-          <div class="info">
-            <b-container
-              v-for="(info, key) in infos"
-              v-show="infoChosed == key"
-              :key="info.key"
-            >
-              <h1>Olá, eu sou<br />Daniel G. Queiroz</h1>
-              <nuxt-content :document="info" />
-            </b-container>
-            <p></p>
-          </div>
-        </transition>
+        <div class="info">
+          <b-container
+            v-for="(info, key) in infos"
+            v-show="infoChosed == key"
+            :key="info.key"
+          >
+            <h1>Olá, eu sou<br />Daniel G. Queiroz</h1>
+            <nuxt-content :document="info" />
+          </b-container>
+          <p></p>
+        </div>
       </b-col>
 
       <b-col align-self="center">
@@ -39,11 +36,8 @@
   </b-container>
 </template>
 <script>
-import SocialIcons from '../../components/SocialIcons'
 export default {
-  components: {
-    SocialIcons,
-  },
+  components: {},
   async mounted() {
     const infos = await this.$content('about').fetch()
     this.infos = infos

@@ -1,7 +1,7 @@
 <template>
   <div>
     <Menu />
-    <Nuxt />
+    <RouterView />
   </div>
 </template>
 <script>

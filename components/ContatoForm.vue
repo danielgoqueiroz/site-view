@@ -1,11 +1,6 @@
 <template>
   <b-container fluid>
-    <b-img
-      src="~/static/images/image.jpg"
-      alt=""
-      fluid
-      class="image-featured"
-    ></b-img>
+    <h2>Get in touch</h2>
     <b-form-group
       class="mx-auto"
       label="Envie um mensagem."
