@@ -5,7 +5,7 @@
       <b-col cols="4"
         ><b-img
           class="img-about"
-          src="images/sobre/daniel_transparent.png"
+          src="images/sobre/daniel_transparent-compress.png"
           alt="Image"
           fluid
       />
@@ -47,6 +47,7 @@ export default {
 }
 </script>
 <style>
+
 .backgoundGradient {
   background: linear-gradient(
     to bottom,
