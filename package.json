@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "bootstrap": "^4.6.0",
-    "bootstrap-vue": "^2.21.2",
+    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.20.3",
     "nuxt": "^2.15.8"
   },
