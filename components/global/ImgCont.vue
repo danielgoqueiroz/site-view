@@ -1,5 +1,7 @@
 <template>
-  <img :src="imgSrc()" :alt="alt" class="article-image" />
+  <b-container>
+    <b-img fluid :src="imgSrc" :alt="alt" class="article-image" />
+  </b-container>
 </template>
 
 <script>
@@ -11,19 +13,27 @@ export default {
     },
     alt: {
       type: String,
-      required: true,
+      required: false,
     },
   },
-  methods: {
+  computed: {
     imgSrc() {
       try {
         return require(`~/content${this.src}`)
       } catch (error) {
-        return null
+        console.error(error)
+        return "images/image.jpg"
       }
     },
+  },
+  methods: {
+
   },
 }
 </script>
 
-<style></style>
+<style>
+.article-image{
+  width: inherit;
+}
+</style>

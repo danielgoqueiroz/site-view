@@ -1,7 +1,7 @@
 <template>
   <b-container fluid class="content">
     <div v-show="docs">
-      <h2>Blog</h2>
+      <h2>Potfólio</h2>
       <b-jumbotron v-for="doc in docs" key="doc.key">
         <template #header>
           <b-link :href="doc.dir">{{doc.title }}</b-link>
@@ -28,10 +28,10 @@ export default {
   components: {ImgCont},
   async asyncData({ $content, params }) {
     if (params.slug == undefined) {
-      const docs = await $content('blog', { deep: true }).fetch()
+      const docs = await $content('portfolio', { deep: true }).fetch()
       return { docs }
     } else {
-      let doc = await $content(`blog/${params.slug}`).fetch()
+      let doc = await $content(`portfolio/${params.slug}`).fetch()
       if (doc.length == 1) {
         doc = doc[0]
       }

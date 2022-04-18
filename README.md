@@ -8,14 +8,20 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 
 ### View
 
-- [x] Página inicial com apresentação (simples)
-- [x] Botão de rolagem vertical
-- [ ] Animaçao de transição no botão de rolagem vertical
+- [x] Página principal inicial com apresentação (simples)
+- [x] Área sobre (simples) na página principal
+- [x] Área com lista de projetos
+- [x] Visualização de projetos 
+- [x] Botão voltar de navegação 
+- [ ] Botão de rolagem vertical
+- [ ] Animação de transição no botão de rolagem vertical
 - [x] Deploy no github quando realizar push (com action FTP)
 - [ ] Página de contato
 - [ ] Página de login (salva token em memória)
 - [ ] Página de posts (lista de posts)
 - [ ] Página de post (detalhes do post)
+- [ ] Blog
+- [x] Sistema de carregamento de imagens na mesma pasta do conteúdo Nuxt
 
 ### Servidor
 

@@ -4,10 +4,7 @@ tag: developer
 description: Após atuar com fotografia por mais de 10 anos mudeu de carreira e tenho atuado como desenvolvedor backend na Sicredi.
 ---
 
-## Desenvolvedor
-
-Após uma mudança de carreira em 2018 e atuado como desenvolvedor backend na Dígitro Tecnologia por 3 anos, 
-tenho atuado como backend usando a linguegm Java no Sicredi. Além disso, já utilizei tenho usado VueJS no frontEnd em alguns projetos e
-já trabalei com banco de dados dados relacionais, como Postgres, Oracle e MySql, e alguns NoSQL como MongoDB e Elasticsearch.
-Atualmente faço pós-graduação em ciência de dados na PUC-RS (online).
-Anteriormente, possuo formação em publicidade e propaganda, com mais de 10 anos de experiêcia em produção audiovisual.
+Olá, sou o Daniel. Aqui nesse espaço, que ja foi um site bonitão, agora é um projeto experimental feito inteiramente por mim, em Nuxt. 
+Pretendo mostrar por aqui a minha trajetória, que após uma mudança de carreira em 2018 atuei na Dígitro Tecnologia por 3 anos e que busquei por novos desafios no Sicredi em 2022. 
+Também, pretendo falar sobre alguns projetos que tenho feito e um pouco do que já fiz em outros momentos profissionais. Que curto muito Java, Vuejs e Flutter e também que já tive contato com alguns dos principais bancos de dados relacionais e NoSql.
+Quem sabe também falar sobre a pós em ciência de dados que estou fazendo e sobre algumas coisas que gosto.

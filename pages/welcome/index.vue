@@ -22,15 +22,12 @@
 import SocialIcons from '../../components/SocialIcons'
 import VerticalMenu from '../../components/VerticalMenu'
 import Contact from '../../pages/Contact/index.vue'
-import Projects from '../../pages/Portfolio/Develop/index.vue'
-import Develop from '../../pages/Develop/index.vue'
 import About from '../../pages/About/index.vue'
 
 export default {
   components: {
     SocialIcons,
     VerticalMenu,
-    Develop,
     About,
     Projects,
     Contact,
@@ -46,10 +43,10 @@ export default {
       devButtons: {
         indexSelected: 0,
         itens: [
-          {
-            name: 'Develop',
-            icon: 'code-square',
-          },
+          // {
+          //   name: 'Develop',
+          //   icon: 'code-square',
+          // },
           {
             name: 'Projects',
             icon: 'card-checklist',

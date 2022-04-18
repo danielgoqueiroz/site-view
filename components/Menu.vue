@@ -1,10 +1,19 @@
 <template>
   <div class="header">
     <b-navbar class="footer">
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
+      <p class="text">
+        <b-link title="" @click="back()">
+          <b-icon-arrow-left-circle
+            title="Voltar"
+            class="icon"
+            variant="secondary"
+            :font-scale="1.5"
+          />
+        </b-link>
+      </p>
       <b-navbar-nav class="ml-auto">
-<!--        <p class="icon">-->
+
+        <!--        <p class="icon">-->
 <!--          <b-link title="About" to="/about"> About </b-link>-->
 <!--        </p>-->
         <p class="text">
@@ -96,6 +105,11 @@ export default {
       ],
     }
   },
+  methods: {
+    back () {
+      this.$router.back()
+    }
+  }
 }
 </script>
 

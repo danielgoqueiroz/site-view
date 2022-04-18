@@ -4,7 +4,7 @@
     <Divisor />
     <About />
     <Divisor />
-<!--    <Projects />-->
+    <Projects />
     <Contact />
   </div>
 </template>
@@ -12,6 +12,7 @@
 import About from '~/pages/About'
 import Menu from '~/components/Menu.vue'
 import Contact from '~/pages/Contact'
+import Projects from '~/components/Projects.vue'
 import WelcomeSlider from '~/components/WelcomeSlider.vue'
 import Divisor from '~/components/Divisor.vue'
 
@@ -20,6 +21,7 @@ export default {
     WelcomeSlider,
     Menu,
     About,
+    Projects,
     Contact,
     Divisor,
   },
@@ -37,6 +39,7 @@ export default {
 
   opacity: 1;
 }
+
 body {
   background-image: linear-gradient(
     to right,
