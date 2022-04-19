@@ -1,20 +1,47 @@
 # site-view
 
+## Sobre
+
+Após anos utilizando wordpress como ferramenta para contruir meu site, decidi fazer um site onde aplico os estudos com VueJS e Nuxt.js.
+
+## TODO
+
+### View
+
+- [x] Página inicial com apresentação (simples)
+- [x] Área de contato
+- [x] Botão telefone com copiar conteudo para clipboard
+- [x] Botão email com copiar conteudo para clipboard
+- [x] Botão conversa whatsapp
+- [ ] Botão de rolagem vertical
+- [ ] Animaçao de transição no botão de rolagem vertical
+- [x] Deploy no github quando realizar push (com action FTP)
+- [ ] Página de contato
+- [ ] Página de login (salva token em memória)
+- [ ] Página de posts (lista de posts)
+- [ ] Página de post (detalhes do post)
+- [ ] Blog
+- [x] Sistema de carregamento de imagens na mesma pasta do conteúdo Nuxt
+
+### Servidor
+
+- [ ] api para envio de email
+- [ ] formulário de contato
+- [ ] formulário de login
+
+## Exemplos de design
+
+Paralax
+https://kuon.space/
+
+Dual-View:
+https://designthat.works/
+
 ## Build Setup
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+# Rodar em modo desenvolvimento
+$ npm serve
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
@@ -40,7 +67,6 @@ More information about the usage of this directory in [the documentation](https:
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
 
 ### `pages`
 
