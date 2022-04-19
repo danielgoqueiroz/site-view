@@ -1,12 +1,17 @@
 <template>
-  <div class="header">
+  <div>
     <b-navbar class="footer">
-      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
+      <p class="text">
+        <b-link title="" @click="back()">
+          <b-icon-arrow-left-circle
+            title="Voltar"
+            class="icon"
+            variant="secondary"
+            :font-scale="1.5"
+          />
+        </b-link>
+      </p>
       <b-navbar-nav class="ml-auto">
-<!--        <p class="icon">-->
-<!--          <b-link title="About" to="/about"> About </b-link>-->
-<!--        </p>-->
         <p class="text">
           <b-link title="" href="https://www.linkedin.com/in/danielgqueiroz/">
             <b-icon-linkedin
@@ -67,12 +72,9 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo'
 export default {
   name: 'Menu',
-  components: {
-    Logo,
-  },
+  components: {},
   data() {
     return {
       iconScale: '1.5',
@@ -96,19 +98,24 @@ export default {
       ],
     }
   },
+  methods: {
+    back() {
+      this.$router.back()
+    },
+  },
 }
 </script>
 
 <style>
-a {
-  color: #17a2b8 !important;
-}
 .footer {
   height: 50px;
   align-content: center;
-  background: rgba(255, 255, 255.5, 0.9);
+  background: rgb(255, 255, 255.5, 0.9);
 }
-a:hover {
+.footer > a {
+  color: #17a2b8 !important;
+}
+.footer > a:hover {
   color: rgb(255, 255, 255);
 }
 

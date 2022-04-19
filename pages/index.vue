@@ -1,13 +1,15 @@
 <template>
-  <div class="mx-auto"></div>
+  <b-container>
+    <OnePage />
+  </b-container>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({
-  layout: 'home',
-})
+<script>
+import OnePage from '../pages/OnePage.vue'
+export default {
+  components: {
+    OnePage,
+  },
+  layout: 'default',
+}
 </script>
-
-<style></style>
