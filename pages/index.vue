@@ -1,15 +1,14 @@
 <template>
   <b-container>
-    <OnePage />
+    <About />
+    <ProjectList />
+    <Contact />
   </b-container>
 </template>
 
 <script>
-import OnePage from '../pages/OnePage.vue'
 export default {
-  components: {
-    OnePage,
-  },
+  components: {},
   layout: 'default',
 }
 </script>

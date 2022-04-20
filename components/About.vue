@@ -3,7 +3,7 @@
     <b-card
       img-alt="Card image"
       img-left
-      class="mb-5"
+      class="mb-5 card-sobre"
       img-src="images/image_v.jpg"
     >
       <b-card-text>
@@ -48,7 +48,11 @@ export default {
 }
 </script>
 <style>
+.card-sobre {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
 .content {
+  margin-top: 50px;
   width: 1000px;
 }
 

@@ -26,9 +26,7 @@
           style="max-width: 20rem"
           class="text-center"
           :header="project.title"
-        >
-          <b-card-text> </b-card-text>
-        </b-card>
+        />
       </b-link>
     </b-card-group>
   </div>
@@ -55,4 +53,7 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.projects {
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <div class="footer-bar">
-      <h2>Contatos</h2>
+      <h2 class="shadow">Contatos</h2>
       <b-card>
         <b-card-body>
           <b-button
@@ -54,12 +54,15 @@ export default {
 </script>
 
 <style>
+.shadow {
+  text-shadow: 3px 3px 8px #000000;
+}
 .footer-bar {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: #378d9a;
   color: rgb(255, 255, 255);
   text-align: center;

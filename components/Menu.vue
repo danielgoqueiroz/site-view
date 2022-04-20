@@ -2,70 +2,97 @@
   <div>
     <b-navbar class="footer">
       <p class="text">
-        <b-link title="" @click="back()">
+        <b-button
+          v-b-popover.hover.top="'Voltar'"
+          variant="light"
+          target="_blank"
+          @click="back()"
+        >
           <b-icon-arrow-left-circle
             title="Voltar"
             class="icon"
             variant="secondary"
             :font-scale="1.5"
           />
-        </b-link>
+        </b-button>
       </p>
-      <b-navbar-nav class="ml-auto">
-        <p class="text">
-          <b-link title="" href="https://www.linkedin.com/in/danielgqueiroz/">
-            <b-icon-linkedin
-              title="Linkedin profile"
-              class="icon"
-              variant="info"
-              :font-scale="iconScale"
-            />
-          </b-link>
-        </p>
-        <p class="text">
-          <b-link href="https://github.com/danielgoqueiroz/" target="_blank">
-            <b-icon-github
-              title="Link for my github"
-              class="icon"
-              variant="info"
-              :font-scale="iconScale"
-            />
-          </b-link>
-          <b-link
-            href="https://www.instagram.com/danielgoqueiroz/"
-            target="_blank"
-          >
-            <b-icon-instagram
-              :font-scale="iconScale"
-              variant="info"
-              title="Instagram"
-          /></b-link>
-          <b-link
-            href="https://www.facebook.com/danielgoqueiroz"
-            target="_blank"
-            ><b-icon-facebook
-              :font-scale="iconScale"
-              class="icon"
-              variant="info"
-              title="Facebook"
-          /></b-link>
-          <b-link
-            href="https://www.youtube.com/channel/UC7ksn1uSofsFsFo2l4YUxKw"
-            target="_blank"
-            ><b-icon-youtube
-              :font-scale="iconScale"
-              variant="info"
-              class="icon"
-              title="Youtube"
-          /></b-link>
-          <b-link title="whatsapp" href="https://wa.me/5548999370534"
-            ><b-icon-telephone-fill
-              :font-scale="iconScale"
-              class="icon"
-              variant="info"
-              title="Whatsapp"
-          /></b-link>
-        </p>
+      <b-navbar-nav class="ml-auto botoes-menu">
+        <b-button
+          v-b-popover.hover.top="'Linkedin'"
+          variant="light"
+          href="https://www.linkedin.com/in/danielgqueiroz/"
+          target="_blank"
+        >
+          <b-icon-linkedin
+            title="Linkedin profile"
+            class="icon"
+            variant="info"
+            :font-scale="iconScale"
+          />
+        </b-button>
+        <b-button
+          v-b-popover.hover.top="'Github'"
+          variant="light"
+          href="https://github.com/danielgoqueiroz/"
+          target="_blank"
+        >
+          <b-icon-github
+            title="Link for my github"
+            class="icon"
+            variant="info"
+            :font-scale="iconScale"
+          />
+        </b-button>
+        <b-button
+          v-b-popover.hover.top="'Instagram'"
+          variant="light"
+          href="https://www.instagram.com/danielgoqueiroz/"
+          target="_blank"
+        >
+          <b-icon-instagram
+            :font-scale="iconScale"
+            class="icon"
+            variant="info"
+            title="Facebook"
+          />
+        </b-button>
+        <b-button
+          v-b-popover.hover.top="'Facebook'"
+          variant="light"
+          href="https://www.facebook.com/danielgoqueiroz"
+          target="_blank"
+        >
+          <b-icon-facebook
+            :font-scale="iconScale"
+            class="icon"
+            variant="info"
+            title="Facebook"
+          />
+        </b-button>
+        <b-button
+          v-b-popover.hover.top="'Youtube'"
+          variant="light"
+          href="https://www.youtube.com/channel/UC7ksn1uSofsFsFo2l4YUxKw"
+          target="_blank"
+        >
+          <b-icon-youtube
+            :font-scale="iconScale"
+            variant="info"
+            class="icon"
+            title="Youtube"
+        /></b-button>
+        <b-button
+          v-b-popover.hover.top="'Linkedin'"
+          variant="light"
+          title="whatsapp"
+          href="https://wa.me/5548999370534"
+          target="_blank"
+        >
+          <b-icon-telephone-fill
+            :font-scale="iconScale"
+            class="icon"
+            variant="info"
+        /></b-button>
       </b-navbar-nav>
     </b-navbar>
   </div>
@@ -107,6 +134,9 @@ export default {
 </script>
 
 <style>
+.botoes-menu {
+  margin-right: 15px;
+}
 .footer {
   height: 50px;
   align-content: center;
