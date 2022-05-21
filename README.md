@@ -25,6 +25,9 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 
 ### Servidor
 
+https://danielqueiroz.com/api/wp-json/wp/v2/
+
+- Wordpress API https://danielqueiroz.com/site-api/wp-json/wp/v2/posts | https://danielqueiroz.com/api/wp-json/wp/v2/
 - [ ] api para envio de email
 - [ ] formulário de contato
 - [ ] formulário de login

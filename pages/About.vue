@@ -1,9 +1,33 @@
 <template>
-  <b-container> Sobre </b-container>
+  <b-container>
+  {{teste}}
+  </b-container>
 </template>
 
 <script>
-export default {}
+import axios from 'axios'
+
+export default {
+  data () {
+    return {
+      teste: []
+    }
+  },
+  mounted () {
+    this.get()
+  },
+  methods: {
+    get () {
+      axios.get('https://danielqueiroz.com/api/wp-json/wp/v2/categories')
+      .then(res => {
+        this.teste =res.data
+      })
+      .catch(err => {
+        console.log(err)
+      }) 
+    },
+  }
+}
 </script>
 
 <style></style>

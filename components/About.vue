@@ -22,6 +22,7 @@
         />
       </b-link>
     </b-card>
+    {{ teste }}
   </b-container>
 </template>
 <script>
@@ -33,6 +34,7 @@ export default {
       infoChosed: 1,
       imageScale: '100%',
       iconScale: 1,
+      teste: []
     }
   },
   computed: {},
