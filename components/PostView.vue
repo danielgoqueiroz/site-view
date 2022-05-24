@@ -12,7 +12,7 @@ export default {
 
 <style>
 .content-img > * img { 
-    width: 100%; 
-    height: min-content; 
+    max-width: 100%; 
+    height: fit-content;
 }
 </style>
