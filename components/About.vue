@@ -22,7 +22,6 @@
         />
       </b-link>
     </b-card>
-    {{ teste }}
   </b-container>
 </template>
 <script>
