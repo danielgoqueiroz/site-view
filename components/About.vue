@@ -33,10 +33,9 @@ export default {
       infoChosed: 1,
       imageScale: '100%',
       iconScale: 1,
-      teste: []
+      teste: [],
     }
   },
-  computed: {},
   async mounted() {
     const info = await this.$content('about/developer').fetch()
     this.info = info

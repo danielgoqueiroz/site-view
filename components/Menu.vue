@@ -3,6 +3,7 @@
     <b-navbar class="footer">
       <p class="text">
         <b-button
+          v-show="!isRoot()"
           v-b-popover.hover.top="'Voltar'"
           variant="light"
           target="_blank"
@@ -16,6 +17,7 @@
           />
         </b-button>
       </p>
+
       <b-navbar-nav class="ml-auto botoes-menu">
         <b-button
           v-b-popover.hover.top="'Linkedin'"
@@ -82,9 +84,8 @@
             title="Youtube"
         /></b-button>
         <b-button
-          v-b-popover.hover.top="'Linkedin'"
+          v-b-popover.hover.top="'whatsapp'"
           variant="light"
-          title="whatsapp"
           href="https://wa.me/5548999370534"
           target="_blank"
         >
@@ -126,6 +127,9 @@ export default {
     }
   },
   methods: {
+    isRoot() {
+      return window.location.pathname === '/'
+    },
     back() {
       this.$router.back()
     },
