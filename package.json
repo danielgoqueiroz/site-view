@@ -21,12 +21,15 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vue-sidebar-menu": "^5.2.5",
+    "vue-sidebar-menu-akahon": "^0.1.4"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
+    "@iconify/vue": "^4.0.2",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.5",

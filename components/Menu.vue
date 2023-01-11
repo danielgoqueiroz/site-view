@@ -1,6 +1,19 @@
 <template>
   <div>
-    <b-navbar class="footer">
+    <VueSidebarMenuAkahon
+      :menu-items="menu"
+      :is-menu-open="True"
+      menu-title="Daniel G. Queiroz"
+      menu-logo="icon.jpg"
+      is-search="True"
+      search-placeholder="Buscar..."
+      search-tooltip="Buscar"
+      is-exit-button="false"
+      profile-role="Desenvolvedor/Fotógrafo"
+      profile-name="Daniel G. Queiroz"
+      profile-img="images\sobre\danielgoqueiroz.jpg"
+    />
+    <!-- <b-navbar class="footer">
       <p class="text">
         <b-button
           v-show="!isRoot()"
@@ -95,14 +108,18 @@
             variant="info"
         /></b-button>
       </b-navbar-nav>
-    </b-navbar>
+    </b-navbar> -->
   </div>
 </template>
 
 <script>
+import VueSidebarMenuAkahon from 'vue-sidebar-menu-akahon'
+
 export default {
   name: 'Menu',
-  components: {},
+  components: {
+    VueSidebarMenuAkahon,
+  },
   data() {
     return {
       iconScale: '1.5',
@@ -112,18 +129,38 @@ export default {
       },
       menu: [
         {
-          title: 'Home',
-          link: '/',
-        },
-        {
-          title: 'Sobre',
           link: '/sobre',
+          name: 'Sobre',
+          tooltip: 'Sobre',
+          icon: 'bx-bot',
         },
         {
-          title: 'Contato',
+          link: '/projetos',
+          name: 'Projetos',
+          tooltip: 'Projetos',
+          icon: 'bx-folder-plus',
+        },
+        {
           link: '/contato',
+          name: 'Contato',
+          tooltip: 'Contatos',
+          icon: 'bx-mail-send',
         },
       ],
+      // menu: [
+      //   {
+      //     title: 'Home',
+      //     link: '/',
+      //   },
+      //   {
+      //     title: 'Sobre',
+      //     link: '/sobre',
+      //   },
+      //   {
+      //     title: 'Contato',
+      //     link: '/contato',
+      //   },
+      // ],
     }
   },
   methods: {
@@ -136,6 +173,8 @@ export default {
   },
 }
 </script>
+import { Icon } from '@iconify/vue';
+
 
 <style>
 .botoes-menu {

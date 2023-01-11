@@ -47,6 +47,15 @@ https://designthat.works/
 $ npm serve
 ```
 
+## Menu componente
+
+https://vuejsexamples.com/a-beautiful-sidebar-menu-built-with-vue-js/
+https://github.com/akahon/vue-sidebar-menu-akahon?ref=vuejsexamples.com
+
+### Menu icons
+
+https://coderthemes.com/minton/layouts/default/icons-boxicons.html
+
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
 ## Special Directories

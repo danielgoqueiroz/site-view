@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <b-container fluid>
     <Menu />
     <RouterView />
-  </div>
+  </b-container>
 </template>
 <script>
 export default {
