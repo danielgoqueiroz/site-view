@@ -1,38 +1,50 @@
 <template>
-  <b-container>
-    <div class="footer-bar">
-      <h2 class="shadow">Contatos</h2>
-      <b-card>
-        <b-card-body>
-          <b-button
-            v-b-popover.hover.top="'Click para conversa no whatsapp.'"
-            href="https://api.whatsapp.com/send/?phone=5548999370534"
-            target="_blank"
-            variant="outline-info"
-          >
-            <b-icon-whatsapp title="Github" font-scale="1" />
-            Whatsapp
-          </b-button>
-          <b-button
-            v-b-popover.click.top="'E-mail copiado!'"
-            variant="outline-info"
-            @click="copyText('contato@danielqueiroz.com')"
-          >
-            <b-icon-mail title="Github" font-scale="1" />
-            contato@danielqueiroz.com
-          </b-button>
-          <b-button
-            v-b-popover.click.top="'Telefone copiado!'"
-            target="_blank"
-            variant="outline-info"
-            @click="copyText('48999370534')"
-          >
-            <b-icon-phone title="Github" font-scale="1" />
-            +55 (48) 9 9937-0534
-          </b-button>
-        </b-card-body>
-      </b-card>
-    </div>
+  <b-container class="main">
+    <b-row>
+      <b-col cols="2">
+        <b-img rounded src="contact_300px.jpg" fluid> </b-img>
+      </b-col>
+      <b-col cols="10"><h3>Entre em contato</h3></b-col>
+    </b-row>
+    <b-row>
+      <b-col cols="2"></b-col>
+      <b-col cols="10">
+        <b-button
+          v-b-popover.hover.top="'Click para conversa no whatsapp.'"
+          href="https://api.whatsapp.com/send/?phone=5548999370534"
+          target="_blank"
+          variant="outline-info"
+        >
+          <b-icon-whatsapp title="Github" font-scale="1" />
+          Whatsapp
+        </b-button>
+        <b-button
+          v-b-popover.click.top="'E-mail copiado!'"
+          variant="outline-info"
+          @click="copyText('contato@danielqueiroz.com')"
+        >
+          <b-icon-mail title="Github" font-scale="1" />
+          contato@danielqueiroz.com
+        </b-button>
+        <b-button
+          v-b-popover.click.top="'Telefone copiado!'"
+          target="_blank"
+          variant="outline-info"
+          @click="copyText('48999370534')"
+        >
+          <b-icon-phone title="Github" font-scale="1" />
+          +55 (48) 9 9937-0534
+        </b-button>
+        <p></p>
+        <p></p>
+        <p></p>
+      </b-col>
+    </b-row>
+    <b-row>
+      <b-col cols="2"></b-col>
+      <b-col cols="10"></b-col>
+    </b-row>
+
     <b-popover
       target="popover"
       placement="bottom"

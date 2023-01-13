@@ -4,7 +4,7 @@
       :menu-items="menu"
       :is-menu-open="True"
       menu-title="Daniel G. Queiroz"
-      menu-logo="icon.jpg"
+      menu-logo="danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small.jpg"
       is-search="True"
       search-placeholder="Buscar..."
       search-tooltip="Buscar"

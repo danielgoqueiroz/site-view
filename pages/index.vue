@@ -1,8 +1,6 @@
 <template>
   <b-container>
-    <About />
-    <ProjectList />
-    <Contact />
+    <welcome />
   </b-container>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <About />
+    <Welcome />
   </b-container>
 </template>
 
