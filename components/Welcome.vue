@@ -1,5 +1,5 @@
 <template>
-  <b-container class="main">
+  <b-container>
     <b-row>
       <b-col cols="2">
         <b-img
@@ -57,7 +57,4 @@ export default {}
 </script>
 
 <style>
-.main {
-  margin-top: 75px;
-}
 </style>

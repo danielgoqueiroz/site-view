@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container fluid class="margin-top">
     <Menu />
     <RouterView />
   </b-container>
@@ -14,5 +14,8 @@ export default {
 *::before,
 *::after {
   margin: 0;
+}
+.margin-top {
+  margin-top: 50px;
 }
 </style>
