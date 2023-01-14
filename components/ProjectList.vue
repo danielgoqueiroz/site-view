@@ -2,7 +2,12 @@
   <b-container class="main">
     <b-row>
       <b-col cols="2">
-        <b-img rounded src="projects_300.px.jpg" fluid> </b-img>
+        <b-img
+          rounded
+          src="https://danielqueiroz.com/api/wp-content/uploads/2023/01/portifolio_300.jpg"
+          fluid
+        >
+        </b-img>
       </b-col>
       <b-col cols="10"
         ><h3>

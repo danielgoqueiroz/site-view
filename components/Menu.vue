@@ -4,111 +4,15 @@
       :menu-items="menu"
       :is-menu-open="True"
       menu-title="Daniel G. Queiroz"
-      menu-logo="danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small.jpg"
+      menu-logo="https://danielqueiroz.com/api/wp-content/uploads/2023/01/danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small-1.jpg"
       is-search="True"
       search-placeholder="Buscar..."
       search-tooltip="Buscar"
       is-exit-button="false"
       profile-role="Desenvolvedor/Fotógrafo"
       profile-name="Daniel G. Queiroz"
-      profile-img="images\sobre\danielgoqueiroz.jpg"
+      profile-img="https://danielqueiroz.com/api/wp-content/uploads/2023/01/image.jpg"
     />
-    <!-- <b-navbar class="footer">
-      <p class="text">
-        <b-button
-          v-show="!isRoot()"
-          v-b-popover.hover.top="'Voltar'"
-          variant="light"
-          target="_blank"
-          @click="back()"
-        >
-          <b-icon-arrow-left-circle
-            title="Voltar"
-            class="icon"
-            variant="secondary"
-            :font-scale="1.5"
-          />
-        </b-button>
-      </p>
-
-      <b-navbar-nav class="ml-auto botoes-menu">
-        <b-button
-          v-b-popover.hover.top="'Linkedin'"
-          variant="light"
-          href="https://www.linkedin.com/in/danielgqueiroz/"
-          target="_blank"
-        >
-          <b-icon-linkedin
-            title="Linkedin profile"
-            class="icon"
-            variant="info"
-            :font-scale="iconScale"
-          />
-        </b-button>
-        <b-button
-          v-b-popover.hover.top="'Github'"
-          variant="light"
-          href="https://github.com/danielgoqueiroz/"
-          target="_blank"
-        >
-          <b-icon-github
-            title="Link for my github"
-            class="icon"
-            variant="info"
-            :font-scale="iconScale"
-          />
-        </b-button>
-        <b-button
-          v-b-popover.hover.top="'Instagram'"
-          variant="light"
-          href="https://www.instagram.com/danielgoqueiroz/"
-          target="_blank"
-        >
-          <b-icon-instagram
-            :font-scale="iconScale"
-            class="icon"
-            variant="info"
-            title="Facebook"
-          />
-        </b-button>
-        <b-button
-          v-b-popover.hover.top="'Facebook'"
-          variant="light"
-          href="https://www.facebook.com/danielgoqueiroz"
-          target="_blank"
-        >
-          <b-icon-facebook
-            :font-scale="iconScale"
-            class="icon"
-            variant="info"
-            title="Facebook"
-          />
-        </b-button>
-        <b-button
-          v-b-popover.hover.top="'Youtube'"
-          variant="light"
-          href="https://www.youtube.com/channel/UC7ksn1uSofsFsFo2l4YUxKw"
-          target="_blank"
-        >
-          <b-icon-youtube
-            :font-scale="iconScale"
-            variant="info"
-            class="icon"
-            title="Youtube"
-        /></b-button>
-        <b-button
-          v-b-popover.hover.top="'whatsapp'"
-          variant="light"
-          href="https://wa.me/5548999370534"
-          target="_blank"
-        >
-          <b-icon-telephone-fill
-            :font-scale="iconScale"
-            class="icon"
-            variant="info"
-        /></b-button>
-      </b-navbar-nav>
-    </b-navbar> -->
   </div>
 </template>
 

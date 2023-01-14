@@ -2,7 +2,12 @@
   <b-container class="main">
     <b-row>
       <b-col cols="2">
-        <b-img rounded src="logo_500px.jpg" fluid> </b-img>
+        <b-img
+          rounded
+          src="https://danielqueiroz.com/api/wp-content/uploads/2023/01/danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small-1.jpg"
+          fluid
+        >
+        </b-img>
       </b-col>
       <b-col cols="10"><h3>Olá, eu sou o Daniel.</h3></b-col>
     </b-row>
