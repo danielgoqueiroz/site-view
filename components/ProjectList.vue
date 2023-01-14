@@ -1,5 +1,13 @@
 <template>
-  <b-container class="main">
+  <b-container>
+    <!-- <b-row v-if="isMobile()">
+      <b-img
+        rounded
+        src="https://danielqueiroz.com/api/wp-content/uploads/2023/01/portifolio_300.jpg"
+        fluid
+      >
+      </b-img>
+    </b-row> -->
     <b-row>
       <b-col cols="2">
         <b-img
@@ -23,13 +31,12 @@
           </b-link></h3
       ></b-col>
     </b-row>
-    <div class="projects">
-      <div class="title">
-        <h2></h2>
-      </div>
-      <b-card-group deck class="mb-3">
-        <b-link v-for="(project, index) in projects" :key="index">
+    <b-row>
+      <b-col cols="12">
+        <b-card-group deck class="mb-3">
           <b-card
+            v-for="(project, index) in projects"
+            :key="index"
             v-b-modal.modal-1
             :img-src="getImage(project)"
             border-variant="light"
@@ -38,18 +45,18 @@
             :header="project.title.rendered"
             @click="selectProject(project)"
           />
-        </b-link>
-      </b-card-group>
-      <b-modal id="modal-1" title="Projetos" size="lg">
-        <PostView :content="projectHtml" />
-      </b-modal>
-    </div>
+        </b-card-group>
+      </b-col>
+    </b-row>
+    <b-modal id="modal-1" title="Projetos" size="lg">
+      <PostView :content="projectHtml" />
+    </b-modal>
   </b-container>
 </template>
 
 <script>
 import axios from 'axios'
-import PostView from './PostView.vue'
+// import PostView from './PostView.vue'
 export default {
   data() {
     return {
@@ -66,6 +73,13 @@ export default {
     this.getProjects()
   },
   methods: {
+    isMobile() {
+      if (screen.width <= 760) {
+        return true
+      } else {
+        return false
+      }
+    },
     selectProject(project) {
       console.log(project)
       this.project = project
@@ -89,11 +103,9 @@ export default {
         })
     },
   },
-  components: { PostView },
+  // components: { PostView },
 }
 </script>
 
 <style scoped>
-.projects {
-}
 </style>

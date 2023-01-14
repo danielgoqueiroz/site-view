@@ -2,7 +2,7 @@
   <div>
     <VueSidebarMenuAkahon
       :menu-items="menu"
-      :is-menu-open="True"
+      :is-menu-open="isMobile()"
       menu-title="Daniel G. Queiroz"
       menu-logo="https://danielqueiroz.com/api/wp-content/uploads/2023/01/danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small-1.jpg"
       is-search="True"
@@ -51,23 +51,16 @@ export default {
           icon: 'bx-mail-send',
         },
       ],
-      // menu: [
-      //   {
-      //     title: 'Home',
-      //     link: '/',
-      //   },
-      //   {
-      //     title: 'Sobre',
-      //     link: '/sobre',
-      //   },
-      //   {
-      //     title: 'Contato',
-      //     link: '/contato',
-      //   },
-      // ],
     }
   },
   methods: {
+    isMobile() {
+      if (screen.width <= 760) {
+        return false
+      } else {
+        return true
+      }
+    },
     isRoot() {
       return window.location.pathname === '/'
     },
