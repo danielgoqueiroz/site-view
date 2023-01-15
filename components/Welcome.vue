@@ -15,7 +15,7 @@
       <b-col cols="2"></b-col>
       <b-col cols="10">
         <p>
-          Eu sou uma pessoa apaixonada e engajada no que faço, além de ser
+          teste Eu sou uma pessoa apaixonada e engajada no que faço, além de ser
           curioso e sempre buscando aprender coisas novas. Comecei minha jornada
           profissional como fotógrafo, e durante mais de 10 anos trabalhei em
           jornais capturando imagens noticiosas e documentando eventos

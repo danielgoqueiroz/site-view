@@ -56,7 +56,6 @@
 
 <script>
 import axios from 'axios'
-// import PostView from './PostView.vue'
 export default {
   data() {
     return {
@@ -69,19 +68,11 @@ export default {
       return this.project ? this.project.content.rendered : ''
     },
   },
-  mounted() {
-    this.getProjects()
+  async mounted() {
+    await this.getProjects()
   },
   methods: {
-    isMobile() {
-      if (screen.width <= 760) {
-        return true
-      } else {
-        return false
-      }
-    },
     selectProject(project) {
-      console.log(project)
       this.project = project
     },
     getImage(project) {
@@ -92,8 +83,8 @@ export default {
       }
       return '#'
     },
-    getProjects() {
-      axios
+    async getProjects() {
+      await axios
         .get('https://danielqueiroz.com/api/wp-json/wp/v2/posts?_embed')
         .then((res) => {
           this.projects = res.data

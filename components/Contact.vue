@@ -1,6 +1,7 @@
 <template>
   <b-container class="main">
     <b-row>
+      {{ $isMobile }}
       <b-col cols="2">
         <b-img
           rounded
@@ -63,6 +64,13 @@
 <script>
 export default {
   methods: {
+    isMobile() {
+      if (window.screen.width <= 760) {
+        return true
+      } else {
+        return false
+      }
+    },
     copyText(text) {
       navigator.clipboard.writeText(text)
     },

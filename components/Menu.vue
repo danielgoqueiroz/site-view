@@ -2,13 +2,13 @@
   <div>
     <VueSidebarMenuAkahon
       :menu-items="menu"
-      :is-menu-open="isMobile()"
+      :is-menu-open="!isMobile()"
       menu-title="Daniel G. Queiroz"
       menu-logo="https://danielqueiroz.com/api/wp-content/uploads/2023/01/danielgoqueiroz_a_Q_logo_made_with_computer_objects_4350cc80-fdde-4ba9-a6cf-1f1c5a826ae0_small-1.jpg"
-      is-search="True"
+      :is-search="false"
       search-placeholder="Buscar..."
       search-tooltip="Buscar"
-      is-exit-button="false"
+      :is-exit-button="false"
       profile-role="Desenvolvedor/Fotógrafo"
       profile-name="Daniel G. Queiroz"
       profile-img="https://danielqueiroz.com/api/wp-content/uploads/2023/01/image.jpg"
@@ -18,7 +18,6 @@
 
 <script>
 import VueSidebarMenuAkahon from 'vue-sidebar-menu-akahon'
-
 export default {
   name: 'Menu',
   components: {
@@ -53,12 +52,13 @@ export default {
       ],
     }
   },
+  computed: {},
   methods: {
     isMobile() {
-      if (screen.width <= 760) {
-        return false
-      } else {
+      if (window.screen.width <= 760) {
         return true
+      } else {
+        return false
       }
     },
     isRoot() {
