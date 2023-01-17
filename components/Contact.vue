@@ -1,7 +1,6 @@
 <template>
   <b-container class="main">
     <b-row>
-      {{ $isMobile }}
       <b-col cols="2">
         <b-img
           rounded
@@ -50,14 +49,6 @@
       <b-col cols="2"></b-col>
       <b-col cols="10"></b-col>
     </b-row>
-
-    <b-popover
-      target="popover"
-      placement="bottom"
-      title="Popover!"
-      triggers="hover focus"
-      :content="`Placement ${placement}`"
-    ></b-popover>
   </b-container>
 </template>
 

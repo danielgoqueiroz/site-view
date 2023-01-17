@@ -42,6 +42,11 @@ https://designthat.works/
 
 ## Build Setup
 
+## Email api
+
+https://signup.mailgun.com/new/signup?diversity_plan=flex_trial
+https://app.mailgun.com/app/account/setup
+
 ```bash
 # Rodar em modo desenvolvimento
 $ npm serve

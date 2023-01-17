@@ -1,13 +1,5 @@
 <template>
   <b-container>
-    <!-- <b-row v-if="isMobile()">
-      <b-img
-        rounded
-        src="https://danielqueiroz.com/api/wp-content/uploads/2023/01/portifolio_300.jpg"
-        fluid
-      >
-      </b-img>
-    </b-row> -->
     <b-row>
       <b-col cols="2">
         <b-img
@@ -31,8 +23,10 @@
           </b-link></h3
       ></b-col>
     </b-row>
+    <br />
     <b-row>
-      <b-col cols="12">
+      <b-col cols="2"></b-col>
+      <b-col cols="10">
         <b-card-group deck class="mb-3">
           <b-card
             v-for="(project, index) in projects"
