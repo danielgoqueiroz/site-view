@@ -15,7 +15,7 @@
       <b-col cols="2"></b-col>
       <b-col cols="10">
         <p>
-          teste Eu sou uma pessoa apaixonada e engajada no que faço, além de ser
+          Eu sou uma pessoa apaixonada e engajada no que faço, além de ser
           curioso e sempre buscando aprender coisas novas. Comecei minha jornada
           profissional como fotógrafo, e durante mais de 10 anos trabalhei em
           jornais capturando imagens noticiosas e documentando eventos
@@ -25,15 +25,15 @@
           especializando na linguagem Java.
         </p>
         <p>
-          Além disso, sou um entusiasta de tecnologia e tenho conhecimento
-          avançado nas linguagens Python, Flutter, JavaScript e Vuejs, isso me
-          permite desenvolver soluções web e mobile com alta performance e boa
-          usabilidade. Eu sou uma pessoa muito dedicada e sempre busco me
-          aperfeiçoar e aprender coisas novas, isso me permite solucionar
-          problemas complexos e me adaptar rapidamente a novos desafios. Mas,
-          além de tudo isso, eu sou uma pessoa muito humana, e sempre que posso,
-          procuro ajudar pessoas e causas que acredito, para que possa
-          contribuir para uma sociedade melhor.
+          Além disso, sou um entusiasta de tecnologia e tenho conhecimentos nas
+          linguagens Python, Flutter, JavaScript e Vuejs, isso me permite
+          desenvolver soluções com alta performance e boa usabilidade. Eu sou
+          uma pessoa muito dedicada e sempre busco me aperfeiçoar e aprender
+          coisas novas, isso me permite solucionar problemas complexos e me
+          adaptar rapidamente a novos desafios. Mas, além de tudo isso, eu sou
+          uma pessoa muito humana, e sempre que posso, procuro ajudar pessoas e
+          causas que acredito, para que possa contribuir para uma sociedade
+          melhor.
         </p>
         <p>
           Acredito que a tecnologia é uma ferramenta poderosa para mudar vidas e
