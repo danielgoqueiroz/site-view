@@ -44,6 +44,12 @@ export default {
           icon: 'bx-folder-plus',
         },
         {
+          link: '/fotografia',
+          name: 'Fotografia',
+          tooltip: 'Arquivos fotográficos',
+          icon: 'bx-folder-plus',
+        },
+        {
           link: '/contato',
           name: 'Contato',
           tooltip: 'Contatos',

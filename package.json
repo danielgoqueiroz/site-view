@@ -21,9 +21,13 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7",
+    "jquery": "^3.6.3",
+    "nuxt": "^2.15.8",
+    "vue-masonry": "^0.16.0",
     "vue-sidebar-menu": "^5.2.5",
-    "vue-sidebar-menu-akahon": "^0.1.4"
+    "vue-sidebar-menu-akahon": "^0.1.4",
+    "vue-server-renderer": "2.7.14",
+    "vue": "2.7.14"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",

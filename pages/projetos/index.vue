@@ -1,5 +1,11 @@
 <template>
-  <ProjectList />
+  <b-container>
+    <contentHeader
+      title="Meus projetos"
+      image-title-url="https://danielqueiroz.com/api/wp-content/uploads/2023/01/portifolio_300.jpg"
+    />
+    <ProjectList :items="projects" />
+  </b-container>
 </template>
 
 <script>
@@ -8,11 +14,13 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      projects: [],
       teste: [],
     }
   },
-  mounted() {
+  async mounted() {
     this.get()
+    await this.getProjects()
   },
   methods: {
     get() {
@@ -20,6 +28,17 @@ export default {
         .get('https://danielqueiroz.com/api/wp-json/wp/v2/categories')
         .then((res) => {
           this.teste = res.data
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
+    async getProjects() {
+      await axios
+        .get('https://danielqueiroz.com/api/wp-json/wp/v2/posts?_embed')
+        .then((res) => {
+          this.projects = res.data
+          console.log(this.projects)
         })
         .catch((err) => {
           console.log(err)
