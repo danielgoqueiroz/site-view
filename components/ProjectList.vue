@@ -1,6 +1,5 @@
 <template>
   <b-container>
-    {{ loading }}
     <b-row>
       <b-col cols="2"></b-col>
       <b-col cols="10">
