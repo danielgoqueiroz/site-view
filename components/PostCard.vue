@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="images-container">
     <div class="bottom-left">{{ title }}</div>
     <b-img class="photo-thumb" :src="link" rounded></b-img>
   </div>
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style>
-.container {
+.images-container {
   position: relative;
   text-align: center;
   color: rgb(17, 16, 29);

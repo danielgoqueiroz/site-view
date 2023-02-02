@@ -4,7 +4,7 @@
       title="Meus projetos"
       image-title-url="https://danielqueiroz.com/api/wp-content/uploads/2023/01/portifolio_300.jpg"
     />
-    <ProjectList :items="projects" />
+    <ProjectList :items="projects" :loading="loading" />
   </b-container>
 </template>
 
@@ -14,6 +14,7 @@ import axios from 'axios'
 export default {
   data() {
     return {
+      loading: false,
       projects: [],
       teste: [],
     }
@@ -21,6 +22,7 @@ export default {
   async mounted() {
     this.get()
     await this.getProjects()
+    this.loading = false
   },
   methods: {
     get() {
