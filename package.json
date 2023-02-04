@@ -48,6 +48,6 @@
     "jest": "^27.0.5",
     "lint-staged": "^10.5.4",
     "prettier": "^2.3.2",
-    "vue-jest": "^3.0.4"
+    "vue-jest": "^4.0.1"
   }
 }
