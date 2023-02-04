@@ -16,10 +16,10 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 - [ ] Botão de rolagem vertical
 - [ ] Animaçao de transição no botão de rolagem vertical
 - [x] Deploy no github quando realizar push (com action FTP)
-- [ ] Página de contato
+- [x] Página de contato
 - [ ] Página de login (salva token em memória)
-- [ ] Página de posts (lista de posts)
-- [ ] Página de post (detalhes do post)
+- [x] Página de posts (lista de posts)
+- [x] Página de post (detalhes do post)
 - [ ] Blog
 - [x] Sistema de carregamento de imagens na mesma pasta do conteúdo Nuxt
 
@@ -28,8 +28,8 @@ Após anos utilizando wordpress como ferramenta para contruir meu site, decidi f
 https://danielqueiroz.com/api/wp-json/wp/v2/
 
 - Wordpress API https://danielqueiroz.com/site-api/wp-json/wp/v2/posts | https://danielqueiroz.com/api/wp-json/wp/v2/
-- [ ] api para envio de email
-- [ ] formulário de contato
+- [x] api para envio de email via wordpress
+- [x] formulário de contato
 - [ ] formulário de login
 
 ## Exemplos de design
