@@ -82,9 +82,9 @@ export default {
         .then((response) => {
           this.$bvToast.toast(`${response.data.message}`, {
             title:
-              response.data.status === 200
-                ? 'Mensagem enviada'
-                : 'Ops! Algo deu errado.',
+              response.data.invalid_fields.length > 0
+                ? 'Ops! Algo deu errado.'
+                : 'Mensagem enviada',
             variant: 'success',
             autoHideDelay: 5000,
             solid: true,
