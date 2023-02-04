@@ -37,7 +37,9 @@ export default {
     },
     async getProjects() {
       await axios
-        .get('https://danielqueiroz.com/api/wp-json/wp/v2/posts?_embed')
+        .get(
+          'https://danielqueiroz.com/api/wp-json/wp/v2/posts?_embed&categories=4'
+        )
         .then((res) => {
           this.projects = res.data
           console.log(this.projects)
