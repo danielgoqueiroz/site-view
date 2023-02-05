@@ -39,14 +39,20 @@ export default {
         },
         {
           link: '/projetos',
-          name: 'Projetos',
+          name: 'Desenvolvimento',
           tooltip: 'Projetos',
-          icon: 'bx-folder-plus',
+          icon: 'bx-code',
         },
         {
           link: '/fotografia',
           name: 'Fotografia',
           tooltip: 'Arquivos fotográficos',
+          icon: 'bx-camera',
+        },
+        {
+          link: '/blog',
+          name: 'Blog',
+          tooltip: 'Blog',
           icon: 'bx-folder-plus',
         },
         {

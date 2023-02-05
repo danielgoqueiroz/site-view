@@ -1,43 +1,40 @@
 <template>
-  <b-container fluid class="content">
-    <div v-show="docs">
-      <h2>Blog</h2>
-      <b-jumbotron v-for="doc in docs" :key="doc.key">
-        <template #header>
-          <b-link :href="doc.dir">{{ doc.title }}</b-link>
-        </template>
-        <template #lead>
-          {{ doc.tag }}
-        </template>
-        <hr class="my-4" />
-        <p>
-          {{ doc.description }}
-        </p>
-      </b-jumbotron>
-    </div>
-    <div v-show="doc">
-      <h1>{{ doc ? doc.title : '' }}</h1>
-      <nuxt-content :document="doc"></nuxt-content>
-    </div>
+  <b-container>
+    <ContentHeader
+      title="Blog"
+      image-title-url="https://danielqueiroz.com/api/wp-content/uploads/2023/01/projects_300.px_-1-150x150.jpg"
+    />
+    <ProjectList :items="posts" :loading="loading" />
   </b-container>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  async asyncData({ $content, params }) {
-    if (params.slug === undefined) {
-      const docs = await $content('blog', { deep: true }).fetch()
-      return { docs }
-    } else {
-      let doc = await $content(`blog/${params.slug}`).fetch()
-      if (doc.length === 1) {
-        doc = doc[0]
-      }
-      return {
-        doc,
-        params,
-      }
+  data() {
+    return {
+      posts: [],
+      loading: true,
     }
+  },
+  async mounted() {
+    await this.getPosts()
+  },
+  methods: {
+    async getPosts() {
+      await axios
+        .get(
+          'https://danielqueiroz.com/api/wp-json/wp/v2/posts?_embed&categories=19'
+        )
+        .then((res) => {
+          this.posts = res.data
+          this.loading = false
+          console.log(this.projects)
+        })
+        .catch((err) => {
+          console.error(err)
+        })
+    },
   },
   computed: {},
 }
