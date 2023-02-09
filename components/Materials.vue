@@ -1,8 +1,9 @@
 <template>
   <b-container fluid class="content">
+    {{ filter.title }}
     <b-form-group>
       <b-form-input v-model="filter.title"></b-form-input>
-      <b-button @click="getContests()">Buscar</b-button>
+      <b-button @click="getContests(filter.title)">Buscar</b-button>
     </b-form-group>
 
     <b-table :items="materias" :fields="fields">
@@ -17,7 +18,7 @@ export default {
   components: {},
   data() {
     return {
-      filter: { title: '' },
+      filter: { title: 'Governador' },
       limit: 10,
       materias: {},
       fields: [
@@ -31,17 +32,16 @@ export default {
     await this.getContests()
   },
   methods: {
-    async getContests() {
-      console.log('Buscando dados')
-      let filter = {}
-      if (this.filter.title.length > 0) {
-        filter = { titulo: this.filter.title }
-      }
-      this.materias = await this.$content('materias', { deep: true })
-        .where(filter)
+    async getContests(title) {
+      console.log('Buscando dados', title)
+
+      const materias = await this.$content('materias', { deep: true })
+        // .search('titulo', title)
         .limit(this.limit)
         .fetch()
-      console.log(this.materias)
+      console.log('Dados retornados')
+
+      this.materias = materias
     },
   },
 }
