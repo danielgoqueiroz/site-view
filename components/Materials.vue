@@ -1,0 +1,66 @@
+<template>
+  <b-container fluid class="content">
+    <b-form-group>
+      <b-form-input v-model="filter.title"></b-form-input>
+      <b-button @click="getContests()">Buscar</b-button>
+    </b-form-group>
+
+    <b-table :items="materias" :fields="fields">
+      <template #cell(titulo)="data">
+        <b-link :href="data.item.link" target="_blank">{{ data.value }}</b-link>
+      </template>
+    </b-table>
+  </b-container>
+</template>
+<script>
+export default {
+  components: {},
+  data() {
+    return {
+      filter: { title: '' },
+      limit: 10,
+      materias: {},
+      fields: [
+        { key: 'titulo', label: 'Título' },
+        { key: 'categorias', label: 'Categorias' },
+        { key: 'data', label: 'Data' },
+      ],
+    }
+  },
+  async mounted() {
+    await this.getContests()
+  },
+  methods: {
+    async getContests() {
+      console.log('Buscando dados')
+      let filter = {}
+      if (this.filter.title.length > 0) {
+        filter = { titulo: this.filter.title }
+      }
+      this.materias = await this.$content('materias', { deep: true })
+        .where(filter)
+        .limit(this.limit)
+        .fetch()
+      console.log(this.materias)
+    },
+  },
+}
+</script>
+<style>
+.card-sobre {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.content {
+  margin-top: 50px;
+  width: 1000px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+</style>

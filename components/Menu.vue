@@ -56,6 +56,12 @@ export default {
           icon: 'bx-folder-plus',
         },
         {
+          link: '/materias',
+          name: 'Matérias',
+          tooltip: 'Matérias',
+          icon: 'bx-news',
+        },
+        {
           link: '/contato',
           name: 'Contato',
           tooltip: 'Contatos',
