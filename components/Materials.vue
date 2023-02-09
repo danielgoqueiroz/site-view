@@ -1,12 +1,32 @@
 <template>
   <b-container fluid class="content">
-    {{ filter.title }}
-    <b-form-group>
-      <b-form-input v-model="filter.title"></b-form-input>
-      <b-button @click="getContests(filter.title)">Buscar</b-button>
-    </b-form-group>
+    <b-row>
+      <b-col cols="2"
+        ><b-button
+          @click="getContests(filter.title)"
+          @keyup.enter="getContests(filter.title)"
+          >Buscar</b-button
+        ></b-col
+      >
+      <b-col cols="8" />
+
+      <b-col cols="2"
+        ><b-form-spinbutton
+          id="sb-step"
+          v-model="limit"
+          min="10"
+          max="500"
+          step="10"
+          @change="getContests(filter.title)"
+        ></b-form-spinbutton
+      ></b-col>
+    </b-row>
 
     <b-table :items="materias" :fields="fields">
+      <template #head(titulo)="data">
+        <b-form-input v-model="filter.title" :placeholder="data.label">
+        </b-form-input>
+      </template>
       <template #cell(titulo)="data">
         <b-link :href="data.item.link" target="_blank">{{ data.value }}</b-link>
       </template>
@@ -18,7 +38,7 @@ export default {
   components: {},
   data() {
     return {
-      filter: { title: 'Governador' },
+      filter: { title: '' },
       limit: 10,
       materias: {},
       fields: [
@@ -32,14 +52,38 @@ export default {
     await this.getContests()
   },
   methods: {
-    async getContests(title) {
-      console.log('Buscando dados', title)
+    getRegex(text) {
+      return text
+        .split('')
+        .map((char) => {
+          return `(${char}|${char.toUpperCase()})`
+        })
+        .join('')
+    },
+    async getContests(titulo) {
+      let query = {}
+      if (titulo) {
+        query = { titulo: { $regex: this.getRegex(titulo.toLowerCase()) } }
+        console.log('Query', query)
+      }
 
       const materias = await this.$content('materias', { deep: true })
-        // .search('titulo', title)
         .limit(this.limit)
+        .where(query)
+        .sortBy('data', 'desc')
+        .only(['titulo', 'categorias', 'data', 'link'])
+
         .fetch()
       console.log('Dados retornados')
+      //  const materias = await this.$content('materias', { deep: true })
+      //   .limit(this.limit)
+      //   .where(query)
+      //   .sortBy('data', 'desc')
+      //   .only(['titulo', 'categorias', 'data', 'link'])
+
+      //   .fetch()
+      // console.log('Dados retornados')
+      // use regex to filter by title case insensitive on where
 
       this.materias = materias
     },
