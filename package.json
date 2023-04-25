@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
-    "@commitlint/cli": "^12.1.4",
+    "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^12.1.4",
     "@iconify/vue": "^4.0.2",
     "@nuxtjs/eslint-config": "^6.0.1",
@@ -46,7 +46,7 @@
     "eslint-plugin-vue": "^7.12.1",
     "husky": "^6.0.0",
     "jest": "^27.0.5",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.3.2",
     "vue-jest": "^3.0.4"
   }
